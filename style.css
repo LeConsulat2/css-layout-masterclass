@@ -3,36 +3,36 @@
   height: 100vh;
   flex-direction: row;
   justify-content:center; 
-  row-gap: 20px;
-  column-gap: 50px;
   flex-flow: row wrap;
-  /*flex-flow = flex-direction + flex-wrap together */
-  align-items: center;
+  
+  align-items: stretch;
  
+  /*flex-flow = flex-direction + flex-wrap together */
+  
 }
 
 .box {
-  
-  display: flex;
+  display: flex; 
   justify-content: center;
   align-items: center;
   width: 200px;
-  height: 200px;
-  background-color: red;
-  font-size:30px;
+  font-size:200px;
   color:white;
 
 }
 
 .box:nth-child(1) {
-  background-color: aqua;
-  align-self: flex-start
+  background-color: red;
+  flex-grow: 1;
+  
+  
   
 }
 
-.box:nth-child(3) {
-  order: 0;
-  background-color: black;
-  align-self: flex-end;
+.box:nth-child(2) {
+  
+  background-color: teal;
+  flex-grow: 5;
+  
   
 }
