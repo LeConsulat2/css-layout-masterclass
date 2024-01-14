@@ -1,12 +1,23 @@
 .father {
   display:flex;
-  gap: 10px;
+  height: 100vh;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 
 .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 200px;
   height: 200px;
   background-color: red;
+  font-size:30px;
+  color:white;
+  
+  
 
 }
 
