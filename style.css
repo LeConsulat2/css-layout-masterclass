@@ -25,16 +25,18 @@
 
 .box:first-child {
   background-color: tomato;
-  flex-grow: 1;
-  flex-shrink: 1;
+ 
+  flex: 1 0 500px
+  
  
  }
 
  .box:nth-child(2) {
    
   background-color: orange;
-  flex-grow: 2;
-  flex-shrink: 0;
+  flex-grow: 1;
+  flex-shrink:1;
+  
   
   
 }
@@ -42,9 +44,7 @@
  .box:last-child {
    background-color: teal; 
    flex-grow: 1;
-   flex-shrink: 2;
-   
- 
    
  }
  
+/* flex 
