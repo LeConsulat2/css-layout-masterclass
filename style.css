@@ -1,9 +1,13 @@
 .father {
   display:grid;
-  grid-template-columns: [Katie]100px [Jonathan]200px [Sophie]70px;
-  grid-template-rows: [Counselling]200px [Faculty]300px [Student_hub]400px;
-  column-gap:10px;
-  row-gap:20px;
+  gap:10px;
+  min-height: 50vh;
+  grid-template-columns:repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  grid-auto-columns: 0.5fr;
+  grid-auto-flow: column;
+  
 }
 
 .child {
@@ -15,19 +19,4 @@
   font-size: 20px;
 }
 
-.child:first-child {
-  /* grid-row: Counselling / Student_hub; */
-  /* grid-row-start: 1;
-  grid-row-end:-1; */
-  background-color: khaki;
-  grid-row: span 2;
-}
-
-.child:last-child {
-  grid-column: span 2;
-  /* grid-column: Jonathan / Sophie; */
-  /* grid-column-start: 2;
-  grid-column-end:-1; */
-  
-}
 
