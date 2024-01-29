@@ -1,50 +1,33 @@
 .father {
-  display:flex;
-  height: 100vh;
-  flex-direction: row;
-  justify-content:center; 
-  flex-flow: row wrap;
-  align-items: flex-start;
- 
-  
- 
-  /*flex-flow = flex-direction + flex-wrap together */
-  
+  display:grid;
+  grid-template-columns: [Katie]100px [Jonathan]200px [Sophie]70px;
+  grid-template-rows: [Counselling]200px [Faculty]300px [Student_hub]400px;
+  column-gap:10px;
+  row-gap:20px;
 }
 
-.box {
-  display: flex; 
+.child {
+  background-color: red;
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  font-size:50px;
-  color:white;
-  
-
+  color: white;
+  font-size: 20px;
 }
 
-.box:first-child {
-  background-color: tomato;
- 
-  flex: 1 0 500px
-  
- 
- }
+.child:first-child {
+  /* grid-row: Counselling / Student_hub; */
+  /* grid-row-start: 1;
+  grid-row-end:-1; */
+  background-color: khaki;
+  grid-row: span 2;
+}
 
- .box:nth-child(2) {
-   
-  background-color: orange;
-  flex-grow: 1;
-  flex-shrink:1;
-  
-  
+.child:last-child {
+  grid-column: span 2;
+  /* grid-column: Jonathan / Sophie; */
+  /* grid-column-start: 2;
+  grid-column-end:-1; */
   
 }
- 
- .box:last-child {
-   background-color: teal; 
-   flex-grow: 1;
-   
- }
- 
-/* flex 
+
