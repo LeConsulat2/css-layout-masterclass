@@ -1,17 +1,13 @@
 
 
 .father {
-  height: 100vh;
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
-  
+  display:grid;
+  grid-template-columns: 100px 200px;
+  grid-template-rows: 200px 100px;
+  gap:10px;
 }
 
 .child {
-  display: grid;
-  align-items: center; /* Vertical centering */
-  justify-content: center; /* Horizontal centering */
   background-color: red;
-  color: white;
+  
 }
